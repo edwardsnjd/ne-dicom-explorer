@@ -11,7 +11,7 @@ commands.each {|command|
   when 'print'
     dcm.print
   when 'image'
-    dcm.image.normalize.display
+    dcm.image.normalize.thumbnail(0.10).display
   else
     dcm.summary
   end
